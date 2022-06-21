@@ -7,7 +7,8 @@ const result=document.querySelector(".result")
 const gameFinishText=document.querySelector("#gameFinishText")
 const resetButton=document.querySelector("#resetButton")
 const resultArray=[[0,1,2],[3,4,5],[6,7,8],[0,3,6],[1,4,7],[2,5,8],[0,4,8],[2,4,6]]
-
+let person1 = prompt("Please enter your name for Player-X");
+let person2 =prompt("Please enter your name for Player-O");
 const hover=()=>{
     const removeHover=(box)=>{
         box.classList.remove("X-hover")
@@ -40,8 +41,14 @@ const resultCheck=()=>{
         const sampleA=resultSample[ele[0]]
         const sampleB=resultSample[ele[1]]
         const sampleC=resultSample[ele[2]]
-        if(sampleA!==""&&sampleA===sampleB&&sampleA===sampleC){
-            final(sampleA)
+        if(sampleA==x&&sampleA===sampleB&&sampleA===sampleC){
+            final(person1)
+            return
+
+
+        }
+        else if (sampleA==o&&sampleA===sampleB&&sampleA===sampleC){
+            final(person2)
             return
         }
     }

@@ -7,7 +7,7 @@ const result=document.querySelector(".result")
 const gameFinishText=document.querySelector("#gameFinishText")
 const resetButton=document.querySelector("#resetButton")
 const resultArray=[[0,1,2],[3,4,5],[6,7,8],[0,3,6],[1,4,7],[2,5,8],[0,4,8],[2,4,6]]
-
+let person1=prompt("Please enter your name")
 const hover=()=>{
     const removeHover=(box)=>{
         box.classList.remove("X-hover")
@@ -26,8 +26,10 @@ const addHover=(box)=>{
 
 const final=(txt)=>{
      let text="Draw"
-     if(txt!==""){
+     if(txt===person1){
         text=`winner is ${txt}`
+     }else if (txt==="AI"){
+        text=`${person1} is too stupid, AI wins`
      }
     result.classList.remove("invisble")
     result.classList.add("visble")
@@ -40,9 +42,12 @@ const resultCheck=()=>{
         const sampleA=resultSample[ele[0]]
         const sampleB=resultSample[ele[1]]
         const sampleC=resultSample[ele[2]]
-        if(sampleA!==""&&sampleA===sampleB&&sampleA===sampleC){
-            final(sampleA)
-            return
+        if(sampleA===x&&sampleA===sampleB&&sampleA===sampleC){
+            final(person1)
+
+        }else if (sampleA===o&&sampleA===sampleB&&sampleA===sampleC){
+            final("AI")
+
         }
     }
     const myFunc2=(box)=>{
