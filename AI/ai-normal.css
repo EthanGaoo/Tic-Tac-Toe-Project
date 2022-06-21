@@ -3,9 +3,15 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: 'Poiret One', cursive;
+    color:lightseagreen;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("https://www.kozminski.edu.pl/sites/leon/files/styles/product_header/public/images/ai%281%29.png?itok=QyCwIeOQ");
+
 }
 h1{
-    color: red;
+
     font-size: 50px;
 }
 
@@ -30,15 +36,15 @@ h1{
 }
 
 .right-border{
-    border-right: 15px solid black;
+    border-right: 15px ridge lightblue;
 }
 .bottom-border{
-    border-bottom: 15px solid black;
+    border-bottom: 15px ridge lightseagreen;
 }
 
 
 .result{
-    border: 15px solid black;
+    border: 15px outset white;
     width: 930px;
     height: 300px ;
     text-align: center;
@@ -61,7 +67,7 @@ h1{
 }
 
 button{
-    border: 2px solid black;
+    border: 2px outset white;
     font-size: 30px;
     background-color: red;
 
@@ -75,20 +81,20 @@ button{
 }
 #count{
     font-size: 100px;
-    border: 5px solid black;
+    border: 5px outset white;
     background-color: red;
     position:absolute;
     top: 30px;
-    right:700px;
+    right: 600px;
 
 }
 a {
     margin-top: 100px;
      font-size: 20px;
-     border: 5px solid black;
+     border: 5px outset white;
      padding: 20px;
      text-decoration: none;
-     background-color: red;
+     background-color: lightseagreen;
      font-weight: bolder;
      position: absolute;
      top: 1100px;

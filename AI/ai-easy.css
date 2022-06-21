@@ -4,9 +4,14 @@ body{
 
     justify-content: center;
     align-items: center;
+    font-family: 'Poiret One', cursive;
+    color:black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("https://www.cas.org/sites/default/files/styles/promo_hero/public/2018-09/humans_and_big_data.jpg?itok=UI36_Ygz");
 }
 h1{
-    color: red;
+
     font-size: 50px;
 }
 
@@ -31,15 +36,15 @@ h1{
 }
 
 .right-border{
-    border-right: 15px solid black;
+    border-right: 15px ridge lightblue;
 }
 .bottom-border{
-    border-bottom: 15px solid black;
+    border-bottom: 15px ridge lightseagreen;
 }
 
 
 .result{
-    border: 15px solid black;
+    border: 15px outset white;
     width: 930px;
     height: 300px ;
     text-align: center;
@@ -62,7 +67,7 @@ h1{
 }
 
 button{
-    border: 2px solid black;
+    border: 2px outset white;
     font-size: 30px;
     background-color: red;
 
@@ -77,7 +82,7 @@ button{
 
 #count{
     font-size: 100px;
-    border: 5px solid black;
+    border: 5px outset white;
     background-color: red;
     position:absolute;
     top: 30px;
@@ -88,10 +93,10 @@ button{
 a {
     margin-top: 100px;
      font-size: 20px;
-     border: 5px solid black;
+     border: 5px outset white;
      padding: 20px;
      text-decoration: none;
-     background-color: red;
+     background-color: lightseagreen;
      font-weight: bolder;
 
 }

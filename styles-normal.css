@@ -3,6 +3,11 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: 'Poiret One', cursive;
+    color:wheat;
+    background-image: url("https://images.unsplash.com/photo-1566228015668-4c45dbc4e2f5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 h1{
     color: red;
@@ -30,15 +35,15 @@ h1{
 }
 
 .right-border{
-    border-right: 15px solid black;
+    border-right: 15px ridge whitesmoke;
 }
 .bottom-border{
-    border-bottom: 15px solid black;
+    border-bottom: 15px ridge whitesmoke;
 }
 
 
 .result{
-    border: 15px solid black;
+    border: 15px outset wheat;
     width: 930px;
     height: 300px ;
     text-align: center;
@@ -61,7 +66,7 @@ h1{
 }
 
 button{
-    border: 2px solid black;
+    border: 2px outset wheat;
     font-size: 30px;
     background-color: red;
 
@@ -75,12 +80,12 @@ button{
 }
 #count{
     font-size: 100px;
-    border: 5px solid black;
+    border: 5px outset wheat;
     background-color: red;
     margin-top: 20px;
     position:absolute;
     top: 30px;
-    right:700px;
+    right:600px;
 }
 
 
@@ -88,7 +93,7 @@ button{
 a {
     margin-top: 100px;
      font-size: 20px;
-     border: 5px solid black;
+     border: 5px outset wheat;
      padding: 20px;
      text-decoration: none;
      background-color: red;

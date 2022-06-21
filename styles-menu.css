@@ -5,11 +5,16 @@ body{
    flex-direction: column;
    justify-content: center;
    align-items: center;
-
+   background-image:url("https://imageio.forbes.com/specials-images/imageserve/523234996/0x0.jpg?format=jpg&width=1200");
+   background-size: cover;
+   background-position: center;
+   font-family: 'Poiret One', cursive;
+   color: wheat;
 
 }
 h1{
     font-size: 200px;
+
 
 }
 h3{
@@ -24,9 +29,12 @@ h3{
 
 .mode{
    font-size: 100px;
-   border: 10px solid  red;
+   border: 10px inset  white;
    margin: 100px;
    padding: 10px;
+   background-color:grey;
+
+
 
 }
 a{
