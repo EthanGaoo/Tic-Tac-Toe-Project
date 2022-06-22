@@ -57,8 +57,7 @@ const resultCheck=()=>{
     if (resultSample.every(myFunc2)){
         final("")
    }
-// console.log(resultSample)
-// console.log(resultSample.every(myFunc2))
+
 
     }
 
@@ -66,24 +65,50 @@ const resultCheck=()=>{
 
 
 
+
    const aiMove=()=>{
+// const cb=(ele)=>{
+//         return ele===""
+//     }
+//     let newBoxes=resultSample.filter(cb)
+    const boxesArray = Array.from(boxes)
 
+    const emptyBoxes = boxesArray.filter((box)=> {
+        return box.textContent === ''
+    })
 
-    for(let i=Math.floor(Math.random()*9);i<boxes.length;i++){
+    if (emptyBoxes.length === 0) {
+        return
+    }
 
-        if(boxes[i].textContent===""){
+    const randomNum = Math.floor(Math.random() * emptyBoxes.length)
+    const nextBox = emptyBoxes[randomNum]
+    const index = parseInt(nextBox.dataset.index)
+    nextBox.textContent = o
+    resultSample[index] = o
 
+    // console.log(newBoxes)
+    // console.log(resultSample)
 
-          return  (boxes[i].textContent=o)&&(resultSample[i]=o)
+    // for(let i=Math.floor(Math.random()*newBoxes.length);i<newBoxes.length;i++){
+    //     if(resultSample[i]==="")
+    //     return (boxes[i].textContent=o)&&(resultSample[i]=o)
+    // }
+    // for(let i=Math.floor(Math.random()*9);i<boxes.length;i++){
+    //     if(newBoxes.length===0){
+    //        break
+    //     }
+    //     else if(boxes[i].textContent===""){
+    //     return (boxes[i].textContent=o)&&(resultSample[i]=o)
+    //     }else if ((boxes[i].textContent!=="")){
+    //         return aiMove()
+    //     }
 
-        }
-
-
+    // }
 
 
    }
 
-   }
 
 let interval
 const clickBox=(event)=>{
@@ -121,13 +146,13 @@ const clickBox=(event)=>{
 
     hover()
     resultCheck()
-    }
+}
 
 const myfunc1=(box)=>{
     box.addEventListener("click",clickBox)
 }
-
 boxes.forEach(myfunc1)
+
 
 
 

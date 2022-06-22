@@ -65,11 +65,17 @@ const resultCheck=()=>{
     }
 
 const aiMove=()=>{
-    for(let i=Math.floor(Math.random()*25);i<boxes.length;i++){
-        if(boxes[i].textContent===""){
-           return( boxes[i].textContent=o)&&(resultSample[i]=o)
-        }
-    }
+   const newBoxes=Array.from(boxes)
+   const emptyBoxes=newBoxes.filter((ele)=> {return ele.textContent===""})
+   if(emptyBoxes.length===0){
+    return
+}
+// console.log(nextBox)
+   const randomNum=Math.floor((Math.random()*emptyBoxes.length))
+   const nextBox=emptyBoxes[randomNum]
+   const index=parseInt(emptyBoxes[randomNum].dataset.index)
+   nextBox.textContent=o
+   resultSample[index]=o
 }
 
 
