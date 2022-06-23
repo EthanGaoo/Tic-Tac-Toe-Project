@@ -36,6 +36,8 @@ All players' names can be customizable in different modes. Players can put their
 
 ![Screenshot](./Screen%20Shot%202022-06-23%20at%2011.46.51%20am.png)
 
+---------------------------------------------------------------
+
 ## Possible future feature additions
 
 * In `PLAYER VS AI` mode , allow player the AI `EASY MODE` or `HARD MODE`
