@@ -2,6 +2,7 @@
 ## Indroduction
 
 This Tic Tac Toe game is the first solo project of my soft engineering career. During this project, I learnt how to turn project logic into code and use CSS to decorate the project.Here is the [brief.](https://gist.github.com/wofockham/8e959d5cfe7d120f1157)
+>Welcome to [play](https://ethangaoo.github.io/Tic-Tac-Toe-Project/index-menu.html) the game
 
 ---------------------------------------------------------------
 ## Built with
