@@ -114,7 +114,7 @@ const clickBox = (event) => {
             else if (count === -1){
                 clearInterval(interval)
                 alert("You're out of time!")
-                gameFinishText.textContent=`${person1} lose`
+                gameFinishText.textContent=`${person1} lost`
                 result.classList.remove("invisble")
                 result.classList.remove("visble")
             }
